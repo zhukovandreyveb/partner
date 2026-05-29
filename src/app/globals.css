@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BASE */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #111827;
+}
+
+/* SELECTION */
+
+::selection {
+  background: #16a34a;
+  color: white;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #16a34a;
+  border-radius: 999px;
+}
+
+/* PROSE */
+
+.prose {
+  max-width: none;
+  color: #374151;
+}
+
+.prose h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.prose h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.prose p {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.9;
+}
+
+.prose ul {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.prose li {
+  margin-top: 0.5rem;
+}
+
+.prose strong {
+  color: #111827;
+}
+
+/* TABLES */
+
+.prose table {
+  width: 100%;
+  overflow: hidden;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+}
+
+.prose th {
+  background: #f9fafb;
+  font-weight: 700;
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+}
+
+.prose td {
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+}
+
+.prose tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+/* BLOCKQUOTE */
+
+.prose blockquote {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid #16a34a;
+  background: #f0fdf4;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-style: normal;
+  color: #166534;
+}
+
+/* LINKS */
+
+.prose a {
+  color: #15803d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.prose a:hover {
+  text-decoration: underline;
+}
+
+/* IMAGES */
+
+.prose img {
+  border-radius: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* CODE */
+
+.prose code {
+  background: #f3f4f6;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+}
